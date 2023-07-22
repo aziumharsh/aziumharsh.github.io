@@ -1,0 +1,152 @@
+/* ||IMPORTS|| */
+/* || Fonts: */
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Pacifico&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+/* ||RESET|| */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ||CONFIGURATIONS|| */
+html {
+    scroll-behavior: smooth;
+}
+
+/* ||STYLES|| */
+/* || Overall: */
+body {
+    height: 100vh;
+    width: 100vw;
+    font-family: "Roboto", sans-serif;
+    background-image: url("./Assets/Images/background_image.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* || Top Panel: */
+.Top__Panel {
+    top: 0;
+    height: 50vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.Top__Panel #ONE {
+    margin: 32px;
+}
+
+.Top__Panel #ONE img {
+    border-style: solid;
+    border-color: black;
+    border-width: 0px;
+    border-radius: 50rem;
+    box-shadow: 6px 6px 16px 3px rgba(0, 0, 0, 0.5);
+}
+
+.Top__Panel #TWO {
+    margin: 32px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 32px;
+    color: whitesmoke;
+}
+
+.Top__Panel #TWO h1 {
+    padding: 12px;
+    font-family: "Poppins", sans-serif;
+    font-size: 2.5rem;
+    text-align: center;
+    border-style: none;
+    border-radius: 0.5rem;
+    background-color: black;
+    opacity: 0.8;
+    box-shadow: 6px 6px 16px 3px rgba(0, 0, 0, 0.5);
+}
+
+.Top__Panel #TWO p {
+    padding: 12px;
+    text-align: center;
+    font-family: "Pacifico", cursive;
+    font-size: 1.5rem;
+    border-style: none;
+    border-radius: 0.5rem;
+    background-color: black;
+    opacity: 0.8;
+    box-shadow: 6px 6px 16px 3px rgba(0, 0, 0, 0.5);
+}
+
+.Top__Panel #TWO .Connect__With__Me {
+    display: flex;
+    flex-direction: row;
+    flex-wrap:nowrap;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+    border-style: none;
+    border-radius: 0.5rem;
+    opacity: 0.8;
+    box-shadow: 6px 6px 16px 3px rgba(0, 0, 0, 0.5);
+}
+
+.Top__Panel #TWO .Connect__With__Me a {
+    margin: 8px;
+    padding: 16px;
+    text-decoration: none;
+}
+
+/* || Bottom Panel: */
+.Bottom__Panel {
+    position: absolute;
+    bottom: 0;
+    height: 50vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: center;
+    color: whitesmoke;
+}
+
+.Bottom__Panel .Bottom__Panel__Items {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-around;
+    gap: 10rem;
+}
+
+.Bottom__Panel #ONE {
+    padding: 12px;
+    text-align: center;
+    font-family: "Pacifico", cursive;
+    font-size: 1rem;
+    border-style: none;
+    border-radius: 0.5rem;
+    background-color: black;
+    opacity: 0.8;
+    box-shadow: 6px 6px 16px 3px rgba(0, 0, 0, 0.5);
+}
+
+.Bottom__Panel #ONE a {
+    font-family: "Poppins", sans-serif;
+    margin: 32px;
+    color: whitesmoke;
+    text-decoration: none;
+}
+
+.Bottom__Panel #ONE a:hover {
+    text-decoration: underline;
+}
